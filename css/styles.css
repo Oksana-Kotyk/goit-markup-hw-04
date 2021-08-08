@@ -137,6 +137,7 @@ img {
 }
 .cont-icon {
   margin-right: 10px;
+  fill: var(--primary-text-color);
 }
 .link:hover .cont-icon {
   fill: var(--accent-color);
@@ -319,6 +320,8 @@ img {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
   background-color: var(--primary-white-color);
 }
 .team-member {
@@ -331,22 +334,25 @@ img {
 .team-member-description {
   line-height: 19px;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
 }
-.list-icons {
-  padding-top: 16px;
-}
+
 .list-icon {
   width: 44px;
   height: 44px;
   background-color: var(--primary-white-color);
-  margin-right: 10px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   fill: #afb1b8;
 }
-
+.icon-list {
+  margin-right: 10px;
+}
+.icon-list:last-child {
+  margin-right: 0;
+}
 .list-icon:focus,
 .list-icon:hover {
   background-color: var(--accent-color);
@@ -364,16 +370,22 @@ img {
   align-items: center;
   border: 1px solid #afb1b8;
   background-color: var(--primary-white-color);
-  fill: #afb1b8;
 }
 
-.item-logo:focus,
-.item-logo:hover {
+.logo-icon:focus,
+.logo-icon:hover {
   fill: var(--accent-color);
   cursor: pointer;
 }
 .item-logo:last-child {
   margin-right: 0;
+}
+.logo-icon {
+  fill: #afb1b8;
+  padding-right: 32px;
+  padding-left: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* Подвал */
@@ -386,6 +398,7 @@ img {
 }
 .footer-container {
   display: inline-flex;
+  align-items: baseline;
 }
 .logo-link {
   display: block;
@@ -435,10 +448,17 @@ img {
   color: var(--accent-color);
 }
 .footer-icons {
-  padding-left: 70px;
+  margin-left: 70px;
 }
-.footer-title {
+.footer-paragraf {
   color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0;
+  margin-bottom: 20px;
 }
 .f-list-icon {
   background: rgba(255, 255, 255, 0.1);
@@ -491,19 +511,23 @@ img {
   flex-wrap: wrap;
   margin: -15px;
 }
+.link-portfolio {
+  text-decoration: none;
+}
 .portfolio-text {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  border: ;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
 }
 .portfolio-item {
   color: var(--title-text-color);
+  font-family: Roboto;
   font-weight: bold;
+  font-style: normal;
   font-size: 18px;
   line-height: 36px;
   letter-spacing: 0.06em;
@@ -512,4 +536,9 @@ img {
 .portfolio-subscribe {
   line-height: 30px;
   letter-spacing: 0.03em;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: var(--primary-text-color);
 }
