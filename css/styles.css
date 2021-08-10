@@ -382,10 +382,6 @@ img {
 }
 .logo-icon {
   fill: #afb1b8;
-  padding-right: 32px;
-  padding-left: 32px;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 /* Подвал */
@@ -462,6 +458,7 @@ img {
 }
 .f-list-icon {
   background: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
 }
 /* Портфоліо */
 /* Уникальная часть */
@@ -487,6 +484,7 @@ img {
   cursor: pointer;
   padding: 6px 22px;
   border: none;
+  border-radius: 4px;
 }
 .current-btn {
   color: var(--primary-white-color);
@@ -502,7 +500,8 @@ img {
 .portfolio-li-item {
   margin: 15px;
 }
-.portfolio-li-item:hover {
+.portfolio-li-item:hover,
+.portfolio-li-item:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
