@@ -139,7 +139,8 @@ img {
   margin-right: 10px;
   fill: var(--primary-text-color);
 }
-.link:hover .cont-icon {
+.link:hover .cont-icon,
+.link:focus .cont-icon {
   fill: var(--accent-color);
 }
 .list-contacts {
@@ -372,16 +373,27 @@ img {
   background-color: var(--primary-white-color);
 }
 
-.logo-icon:focus,
-.logo-icon:hover {
-  fill: var(--accent-color);
-  cursor: pointer;
-}
 .item-logo:last-child {
   margin-right: 0;
 }
 .logo-icon {
   fill: #afb1b8;
+}
+.logo-icon:focus,
+.logo-icon:hover {
+  fill: var(--accent-color);
+}
+.item-logo:focus-within {
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+}
+.item-logo:hover {
+  cursor: pointer;
+  border: 1px solid var(--accent-color);
+}
+.item-logo:hover .logo-icon,
+.item-logo:focus .logo-icon {
+  fill: var(--accent-color);
 }
 
 /* Подвал */
@@ -500,10 +512,13 @@ img {
 .portfolio-li-item {
   margin: 15px;
 }
-.portfolio-li-item:hover,
-.portfolio-li-item:focus {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+.portfolio-li-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-li-item:focus-within {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .list-portfolio {
   display: flex;
@@ -512,7 +527,12 @@ img {
 }
 .link-portfolio {
   text-decoration: none;
+  display: block;
 }
+.link-portfolio:focus {
+  text-decoration: none;
+}
+
 .portfolio-text {
   padding-top: 20px;
   padding-bottom: 20px;
